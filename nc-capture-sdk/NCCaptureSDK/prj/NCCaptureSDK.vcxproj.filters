@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3a6cc973-8446-4674-96cf-711668b5a6b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Capture">
+      <UniqueIdentifier>{51e665b8-a0aa-40fa-8c78-a8720475d531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Global">
+      <UniqueIdentifier>{b0e1c37d-fc56-4fb5-90fa-f712d5bc4236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\etc">
+      <UniqueIdentifier>{e3b8e82e-5454-48c0-85f0-a00e930693af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VideoDevice">
+      <UniqueIdentifier>{2170fcd5-b78e-4063-896c-28f3fbd29224}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\framework.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pch.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\NCCaptureSDK.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\NCCapture.h">
+      <Filter>Source Files\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\graphics-hook-info.h">
+      <Filter>Source Files\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hook-helpers.h">
+      <Filter>Source Files\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Timer.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\easylogging++.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Texture2D.h">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Singleton.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StructureDefines.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\DXUtil.h">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LockObject.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Sprite.h">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VideoDevice.h">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\dllmain.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pch.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NCCapture.cpp">
+      <Filter>Source Files\Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\easylogging++.cc">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Texture2D.cpp">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sprite.cpp">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VideoDevice.cpp">
+      <Filter>Source Files\VideoDevice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NCCaptureSDK.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

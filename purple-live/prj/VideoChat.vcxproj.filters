@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\View">
+      <UniqueIdentifier>{d9372a94-3041-4f20-b859-a156299bc288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager">
+      <UniqueIdentifier>{e5105538-d73e-426f-95fe-53289b962644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\etc">
+      <UniqueIdentifier>{97d401be-d505-47ef-8f51-e1171d6f811b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{0928f65a-e5aa-477d-8cfe-b45bdf96ce20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\AudioMixer">
+      <UniqueIdentifier>{b216931c-c455-48d8-b1a8-515952acb997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ListItem">
+      <UniqueIdentifier>{8fca951a-95d0-4b93-a6be-5e1f07abb38a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\Frameless">
+      <UniqueIdentifier>{c08cd1f9-cef9-47c4-9a24-b101d2798920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Webview">
+      <UniqueIdentifier>{873d389b-d4e3-469e-8ef9-e266d3d09c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\Effect">
+      <UniqueIdentifier>{790b0778-3455-49f0-8a8f-35e790645991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\StartUpPopUpWidgets">
+      <UniqueIdentifier>{019e04be-f196-4774-ad47-cb4861b68c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\StartUpPopUpWidgets">
+      <UniqueIdentifier>{ccc87a6d-8b66-4d5a-bc80-e0f549d756ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Data">
+      <UniqueIdentifier>{54755660-e90c-4ed7-9880-1a7487aefa7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Data\theme">
+      <UniqueIdentifier>{8eeb8055-30d2-4244-be0b-93d9d9ce4d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Data\local">
+      <UniqueIdentifier>{f9a6d667-8e7e-4549-82ac-2c3d47396476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\CustomQObject">
+      <UniqueIdentifier>{1d78026c-8ca8-4cf9-9a1e-571c0a6b51f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\CustomQObject\List">
+      <UniqueIdentifier>{aaf57ab2-59cc-4dd5-afa8-31f68d1105a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\CustomQObject\Slider">
+      <UniqueIdentifier>{a90182c4-a140-43bd-bc31-b8b4c7a52a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\CustomQObject\CheckBox">
+      <UniqueIdentifier>{5608525d-95c0-45b6-a678-e347f90b5f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\CustomQObject\Button">
+      <UniqueIdentifier>{627fac4e-ca29-4eb5-85b4-8b36e6182fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Widget">
+      <UniqueIdentifier>{4bb742fd-9766-42b3-9b47-e88a65da2150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PopUp">
+      <UniqueIdentifier>{62ba45cd-4d96-4a37-b8f5-f2ea1e4fc578}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\PreviewWidget.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StartUpLauncherWindow.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QTWebStompClient.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MAPManager.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SystemInfo.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LimeCommunicator.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LimeLogin.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CommunityLiveManager.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaskingManager.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StartUpWindow.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AppUtils.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\easylogging++.cc">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MainWindow.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VideoChatApp.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PurpleWebsocketClient.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ViewerListPopUp.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PreviewContainerWidget.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VideoChatMessageBox.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AppExcuteHelper.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VideoChatArguments.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AppString.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MainWindowCentralWidget.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LocalSettings.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OpenLicensePopup.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AudioMixer\AudioCircularQueue.cpp">
+      <Filter>Source Files\AudioMixer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AudioMixer\MiniAudioControl.cpp">
+      <Filter>Source Files\AudioMixer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AudioMixer\NCAudioMixer.cpp">
+      <Filter>Source Files\AudioMixer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ShareWithGroupWidget.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MenuControl.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CharacterListItem.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ChatListItem.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MicSettingListItem.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaskSettingListItem.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GuildUserListItem.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QFramelessDialog.cpp">
+      <Filter>Source Files\View\Frameless</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QFramelessPopup.cpp">
+      <Filter>Source Files\View\Frameless</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\browser.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\browserwindow.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\downloadmanagerwidget.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\downloadwidget.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\tabwidget.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\WebCommunicator.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\webpage.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\webpopupwindow.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\webview.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\webview\WebviewControl.cpp">
+      <Filter>Source Files\Webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DimWidget.cpp">
+      <Filter>Source Files\View\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ViewerListItem.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CharacterSelectWidget.cpp">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MicSettingWidget.cpp">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaskSettingWidget.cpp">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebViewWidget.cpp">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HiddenSettings.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StartUpWidgetPushButtons.cpp">
+      <Filter>Source Files\View\CustomQObject\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MainWindowPushButtons.cpp">
+      <Filter>Source Files\View\CustomQObject\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StartUpPopUp.cpp">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RetryConnectionHelper.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VideoChatQListWidget.cpp">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ServiceInspectionManager.cpp">
+      <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MicSlider.cpp">
+      <Filter>Source Files\View\CustomQObject\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MuteCheckBox.cpp">
+      <Filter>Source Files\View\CustomQObject\CheckBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScreenLockWidget.cpp">
+      <Filter>Source Files\View\Effect</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\src\PreviewWidget.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\StartUpLauncherWindow.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MAPManager.h">
+      <Filter>Source Files\Network</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\StartUpWindow.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MainWindow.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\VideoChatApp.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\PurpleWebsocketClient.h">
+      <Filter>Source Files\Network</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\ViewerListPopUp.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\PreviewContainerWidget.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\VideoChatMessageBox.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\AppExcuteHelper.h">
+      <Filter>Source Files\etc</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MainWindowCentralWidget.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\OpenLicensePopup.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\ShareWithGroupWidget.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\CharacterListItem.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\ChatListItem.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MicSettingListItem.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MaskSettingListItem.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\GuildUserListItem.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\browserwindow.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\downloadmanagerwidget.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\downloadwidget.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\JavascriptInterface.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\tabwidget.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\UrlSchemeHandler.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\webpage.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\webpopupwindow.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\webview.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\DimWidget.h">
+      <Filter>Source Files\View\Effect</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\ViewerListItem.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\webview\WebviewUrlRequestInterceptor.h">
+      <Filter>Source Files\Webview</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\CharacterSelectWidget.h">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MicSettingWidget.h">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MaskSettingWidget.h">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\WebViewWidget.h">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\StartUpWidgetPushButtons.h">
+      <Filter>Source Files\View\CustomQObject\Button</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MainWindowPushButtons.h">
+      <Filter>Source Files\View\CustomQObject\Button</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\StartUpPopUp.h">
+      <Filter>Source Files\View\StartUpPopUpWidgets</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\VideoChatQListWidget.h">
+      <Filter>Source Files\View\CustomQObject\List</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MicSlider.h">
+      <Filter>Source Files\View\CustomQObject\Slider</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MuteCheckBox.h">
+      <Filter>Source Files\View\CustomQObject\CheckBox</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\ScreenLockWidget.h">
+      <Filter>Source Files\View\Effect</Filter>
+    </QtMoc>
+    <QtMoc Include="..\src\MenuWidgets.h">
+      <Filter>Source Files\View</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\resource\MainWindow.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\StartUpLauncherWindow.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\StartUpWindow.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\MicSettingListItem.ui">
+      <Filter>Resource Files\ListItem</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\MaskSettingListItem.ui">
+      <Filter>Resource Files\ListItem</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\ChatListItem.ui">
+      <Filter>Resource Files\ListItem</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\CharacterListItem.ui">
+      <Filter>Resource Files\ListItem</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\GuildUserListItem.ui">
+      <Filter>Resource Files\ListItem</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\ViewerListItem.ui">
+      <Filter>Resource Files\ListItem</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\MaskSettingWidget.ui">
+      <Filter>Resource Files\StartUpPopUpWidgets</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\MicSettingWidget.ui">
+      <Filter>Resource Files\StartUpPopUpWidgets</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\CharacterSelectWidget.ui">
+      <Filter>Resource Files\StartUpPopUpWidgets</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\WebViewWidget.ui">
+      <Filter>Resource Files\StartUpPopUpWidgets</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\StartUpPopUp.ui">
+      <Filter>Resource Files\StartUpPopUpWidgets</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\ViewerListPopUp.ui">
+      <Filter>Resource Files\PopUp</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\OpenLicensePopup.ui">
+      <Filter>Resource Files\PopUp</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\ChatListPopUp.ui">
+      <Filter>Resource Files\PopUp</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\VideoChatMessageBox.ui">
+      <Filter>Resource Files\Widget</Filter>
+    </QtUic>
+    <QtUic Include="..\resource\ShareWithGroupWidget.ui">
+      <Filter>Resource Files\Widget</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\resource\VideoChat.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\QTWebStompClient.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StompMessage.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SystemInfo.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LimeCommunicator.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LimeLogin.hpp">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CommunityLiveManager.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaskingManager.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AppConfig.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AppUtils.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\easylogging++.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VideoChatArguments.h">
+      <Filter>Source Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AppString.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LocalSettings.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lime-defines.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AudioMixer\AudioCircularQueue.h">
+      <Filter>Source Files\AudioMixer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AudioMixer\MiniAudioControl.h">
+      <Filter>Source Files\AudioMixer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AudioMixer\NCAudioMixer.h">
+      <Filter>Source Files\AudioMixer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\QFramelessDialog.h">
+      <Filter>Source Files\View\Frameless</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\QFramelessPopup.h">
+      <Filter>Source Files\View\Frameless</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\webview\browser.h">
+      <Filter>Source Files\Webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\webview\WebCommunicator.h">
+      <Filter>Source Files\Webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\webview\WebviewConfig.h">
+      <Filter>Source Files\Webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\webview\WebviewDialog.h">
+      <Filter>Source Files\Webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\webview\WebConfig.h">
+      <Filter>Source Files\Webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\webview\WebviewControl.h">
+      <Filter>Source Files\Webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MenuControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HiddenSettings.h">
+      <Filter>Source Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RetryConnectionHelper.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ServiceInspectionManager.h">
+      <Filter>Source Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MenuControl.h">
+      <Filter>Source Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VideoChat.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\resource\purple.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resource\data\local\ko-KR.ini">
+      <Filter>Resource Files\Data\local</Filter>
+    </None>
+    <None Include="..\resource\data\local\en-US.ini">
+      <Filter>Resource Files\Data\local</Filter>
+    </None>
+    <None Include="..\resource\data\theme\purplelive-dark.qss">
+      <Filter>Resource Files\Data\theme</Filter>
+    </None>
+    <None Include="..\resource\data\theme\purplelive-light.qss">
+      <Filter>Resource Files\Data\theme</Filter>
+    </None>
+    <None Include="..\resource\data\theme\purplelive-purple.qss">
+      <Filter>Resource Files\Data\theme</Filter>
+    </None>
+  </ItemGroup>
+</Project>

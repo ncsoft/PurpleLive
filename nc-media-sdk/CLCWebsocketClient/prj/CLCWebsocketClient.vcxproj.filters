@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\CLCWebsocketClient.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dllmain.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\_CLCWebsocketClient.cpp">
+      <Filter>WebsocketClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\_HttpUtil.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\CLCWebsocketClient.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\targetver.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\_CLCWebsocketClient.h">
+      <Filter>WebsocketClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\CLCWebsocketClientError.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\_HttpUtil.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Global">
+      <UniqueIdentifier>{de4d0dcc-6681-42bf-aaa0-2cacafae548a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebsocketClient">
+      <UniqueIdentifier>{dc42bf77-9472-403a-9c74-91d208586110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{e769c7c9-58e4-4d2d-ac2a-5234d9321e47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CLCWebsocketClient.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

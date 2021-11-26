@@ -1,0 +1,4 @@
+nc-media-sdk/CommunityLiveCore/ext/webrtc/webrtc.lib filter=lfs diff=lfs merge=lfs -text
+nc-media-sdk/CommunityLiveCore/ext/webrtc/webrtcd.lib filter=lfs diff=lfs merge=lfs -text
+nc-media-sdk/CLCWebsocketClient/ext/x64/lib/Debug/cpprest_2_10d.lib filter=lfs diff=lfs merge=lfs -text
+nc-media-sdk/CLCWebsocketClient/ext/x64/lib/Release/cpprest_2_10.lib filter=lfs diff=lfs merge=lfs -text

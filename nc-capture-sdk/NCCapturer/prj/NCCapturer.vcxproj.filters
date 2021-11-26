@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{972e330d-3a85-4d68-9098-6921c5ce2242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\offsets">
+      <UniqueIdentifier>{ccd1d5cb-c340-4c6b-bd43-9f3db05a5ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detours">
+      <UniqueIdentifier>{230fa0e7-b5bb-48f2-bc03-90eabed20e3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\d3d8-capture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d9-capture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d10-capture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d11-capture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\d3d12-capture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dxgi-capture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gl-capture.c">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics-hook.c">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\offsets\d3d8-offsets.cpp">
+      <Filter>Source Files\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\offsets\d3d9-offsets.cpp">
+      <Filter>Source Files\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\offsets\ddraw-offsets.cpp">
+      <Filter>Source Files\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\offsets\dxgi-offsets.cpp">
+      <Filter>Source Files\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\detourhook.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\log.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d1x_shaders.hpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\d3d9-patches.hpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dxgi-helpers.hpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl-decs.h">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\graphics-hook.h">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NCCaptureSDK\src\graphics-hook-info.h">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\offsets\get-graphics-offsets.h">
+      <Filter>Source Files\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\detourhook.h">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log.h">
+      <Filter>Source Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\detours\include\detours.h">
+      <Filter>Source Files\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\detours\include\detver.h">
+      <Filter>Source Files\detours</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NCCapturer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\graphics-hook-config.h.in">
+      <Filter>Source Files\graphics</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A78E1516-A718-44A0-AD1C-F2EDCBA7A434}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IntDir>$(SolutionDir)\trash\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>PurpleLive</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IntDir>$(SolutionDir)\trash\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>PurpleLive</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src;$(SolutionDir)ext\CommunityLiveCore\inc;$(SolutionDir)\ext\NCCaptureSDK\inc;$(SolutionDir)\ext/DirectXTex/include;$(SolutionDir)\ext/DirectXTK/include;$(SolutionDir)\ext/curl/include;$(SolutionDir)\ext/jansson/include;$(SolutionDir)\ext/openssl/include;$(SolutionDir)\ext/jsoncpp/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\ext\CommunityLiveCore\lib\$(Platform)\$(Configuration)\;$(SolutionDir)\ext\NCCaptureSDK\lib\$(Platform)\$(Configuration)\;$(SolutionDir)\ext/directxtex/lib/$(Platform)/$(Configuration);$(SolutionDir)\ext/directxtk/lib/$(Platform)/$(Configuration);$(SolutionDir)\ext/curl/lib;$(SolutionDir)\ext/jansson/lib;$(SolutionDir)\ext/openssl/lib;$(SolutionDir)\ext/openssl/lib/VC;$(SolutionDir)\ext/jsoncpp/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;DirectXTK.lib;NCCaptureSDK.lib;libcurl.lib;jansson_d.lib;libssl64MTd.lib;libcrypto64MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(ProjectDir)..\ext\curl\dll\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\ext\openssl\dll\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\resource\data\*.*" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\data\" /s /y
+xcopy "$(ProjectDir)..\ext\CommunityLiveCore\lib\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\ext\NCCaptureSDK\lib\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\ext\NCCaptureSDK\lib\$(Platform)\$(Configuration)\*.exe" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src;$(SolutionDir)ext\CommunityLiveCore\inc;$(SolutionDir)\ext\NCCaptureSDK\inc;$(SolutionDir)\ext/DirectXTex/include;$(SolutionDir)\ext/DirectXTK/include;$(SolutionDir)\ext/curl/include;$(SolutionDir)\ext/jansson/include;$(SolutionDir)\ext/openssl/include;$(SolutionDir)\ext/jsoncpp/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\ext\CommunityLiveCore\lib\$(Platform)\$(Configuration)\;$(SolutionDir)\ext\NCCaptureSDK\lib\$(Platform)\$(Configuration)\;$(SolutionDir)\ext/directxtex/lib/$(Platform)/$(Configuration);$(SolutionDir)\ext/directxtk/lib/$(Platform)/$(Configuration);$(SolutionDir)\ext/curl/lib;$(SolutionDir)\ext/jansson/lib;$(SolutionDir)\ext/openssl/lib;$(SolutionDir)\ext/openssl/lib/VC;$(SolutionDir)\ext/jsoncpp/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;DirectXTK.lib;NCCaptureSDK.lib;libcurl.lib;jansson_d.lib;libssl64MT.lib;libcrypto64MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\ext\curl\dll\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\ext\openssl\dll\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\resource\data\*.*" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\data\" /s /y
+xcopy "$(ProjectDir)..\ext\CommunityLiveCore\lib\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\ext\NCCaptureSDK\lib\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y
+xcopy "$(ProjectDir)..\ext\NCCaptureSDK\lib\$(Platform)\$(Configuration)\*.exe" "$(ProjectDir)..\bin\$(Platform)\$(Configuration)\" /y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.13.1</QtInstall>
+    <QtModules>core;gui;widgets;winextras;printsupport;websockets;webengine;webenginewidgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.13.1</QtInstall>
+    <QtModules>core;gui;widgets;winextras;printsupport;websockets;webengine;webenginewidgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AppExcuteHelper.cpp" />
+    <ClCompile Include="..\src\AppString.cpp" />
+    <ClCompile Include="..\src\AppUtils.cpp" />
+    <ClCompile Include="..\src\AudioMixer\AudioCircularQueue.cpp" />
+    <ClCompile Include="..\src\AudioMixer\MiniAudioControl.cpp" />
+    <ClCompile Include="..\src\AudioMixer\NCAudioMixer.cpp" />
+    <ClCompile Include="..\src\CharacterListItem.cpp" />
+    <ClCompile Include="..\src\HiddenSettings.cpp" />
+    <ClCompile Include="..\src\MuteCheckBox.cpp" />
+    <ClCompile Include="..\src\RetryConnectionHelper.cpp" />
+    <ClCompile Include="..\src\MainWindowPushButtons.cpp" />
+    <ClCompile Include="..\src\ScreenLockWidget.cpp" />
+    <ClCompile Include="..\src\ServiceInspectionManager.cpp" />
+    <ClCompile Include="..\src\StartUpWidgetPushButtons.cpp" />
+    <ClCompile Include="..\src\CharacterSelectWidget.cpp" />
+    <ClCompile Include="..\src\ChatListItem.cpp" />
+    <ClCompile Include="..\src\DimWidget.cpp" />
+    <ClCompile Include="..\src\GuildUserListItem.cpp" />
+    <ClCompile Include="..\src\LimeCommunicator.cpp" />
+    <ClCompile Include="..\src\LimeLogin.cpp" />
+    <ClCompile Include="..\src\CommunityLiveManager.cpp" />
+    <ClCompile Include="..\src\easylogging++.cc" />
+    <ClCompile Include="..\src\LocalSettings.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\MainWindow.cpp" />
+    <ClCompile Include="..\src\MainWindowCentralWidget.cpp" />
+    <ClCompile Include="..\src\MAPManager.cpp" />
+    <ClCompile Include="..\src\MaskingManager.cpp" />
+    <ClCompile Include="..\src\MaskSettingListItem.cpp" />
+    <ClCompile Include="..\src\MaskSettingWidget.cpp" />
+    <ClCompile Include="..\src\MenuControl.cpp" />
+    <ClCompile Include="..\src\MicSettingListItem.cpp" />
+    <ClCompile Include="..\src\MicSettingWidget.cpp" />
+    <ClCompile Include="..\src\MicSlider.cpp" />
+    <ClCompile Include="..\src\OpenLicensePopup.cpp" />
+    <ClCompile Include="..\src\PreviewContainerWidget.cpp" />
+    <ClCompile Include="..\src\PreviewWidget.cpp" />
+    <ClCompile Include="..\src\PurpleWebsocketClient.cpp" />
+    <ClCompile Include="..\src\QFramelessDialog.cpp" />
+    <ClCompile Include="..\src\QFramelessPopup.cpp" />
+    <ClCompile Include="..\src\QTWebStompClient.cpp" />
+    <ClCompile Include="..\src\ShareWithGroupWidget.cpp" />
+    <ClCompile Include="..\src\StartUpPopUp.cpp" />
+    <ClCompile Include="..\src\StartUpWindow.cpp" />
+    <ClCompile Include="..\src\StartUpLauncherWindow.cpp" />
+    <ClCompile Include="..\src\SystemInfo.cpp" />
+    <ClCompile Include="..\src\VideoChatApp.cpp" />
+    <ClCompile Include="..\src\VideoChatMessageBox.cpp" />
+    <ClCompile Include="..\src\VideoChatArguments.cpp" />
+    <ClCompile Include="..\src\VideoChatQListWidget.cpp" />
+    <ClCompile Include="..\src\ViewerListItem.cpp" />
+    <ClCompile Include="..\src\ViewerListPopUp.cpp" />
+    <ClCompile Include="..\src\WebViewWidget.cpp" />
+    <ClCompile Include="..\src\webview\browser.cpp" />
+    <ClCompile Include="..\src\webview\browserwindow.cpp" />
+    <ClCompile Include="..\src\webview\downloadmanagerwidget.cpp" />
+    <ClCompile Include="..\src\webview\downloadwidget.cpp" />
+    <ClCompile Include="..\src\webview\tabwidget.cpp" />
+    <ClCompile Include="..\src\webview\WebCommunicator.cpp" />
+    <ClCompile Include="..\src\webview\webpage.cpp" />
+    <ClCompile Include="..\src\webview\webpopupwindow.cpp" />
+    <ClCompile Include="..\src\webview\webview.cpp" />
+    <ClCompile Include="..\src\webview\WebviewControl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\src\MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\resource\CharacterListItem.ui" />
+    <QtUic Include="..\resource\CharacterSelectWidget.ui" />
+    <QtUic Include="..\resource\ChatListItem.ui" />
+    <QtUic Include="..\resource\ChatListPopUp.ui" />
+    <QtUic Include="..\resource\GuildUserListItem.ui" />
+    <QtUic Include="..\resource\MainWindow.ui" />
+    <QtUic Include="..\resource\MaskSettingListItem.ui" />
+    <QtUic Include="..\resource\MaskSettingWidget.ui" />
+    <QtUic Include="..\resource\MicSettingListItem.ui" />
+    <QtUic Include="..\resource\MicSettingWidget.ui" />
+    <QtUic Include="..\resource\OpenLicensePopup.ui" />
+    <QtUic Include="..\resource\ShareWithGroupWidget.ui" />
+    <QtUic Include="..\resource\StartUpPopUp.ui" />
+    <QtUic Include="..\resource\StartUpWindow.ui" />
+    <QtUic Include="..\resource\StartUpLauncherWindow.ui" />
+    <QtUic Include="..\resource\VideoChatMessageBox.ui" />
+    <QtUic Include="..\resource\ViewerListItem.ui" />
+    <QtUic Include="..\resource\ViewerListPopUp.ui" />
+    <QtUic Include="..\resource\WebViewWidget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\resource\VideoChat.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\src\StartUpWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\src\StartUpLauncherWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\src\VideoChatApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\src\PreviewWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\AppConfig.h" />
+    <QtMoc Include="..\src\AppExcuteHelper.h" />
+    <ClInclude Include="..\src\AppString.h" />
+    <ClInclude Include="..\src\AppUtils.h" />
+    <QtMoc Include="..\src\DimWidget.h" />
+    <ClInclude Include="..\src\AudioMixer\AudioCircularQueue.h" />
+    <ClInclude Include="..\src\AudioMixer\MiniAudioControl.h" />
+    <ClInclude Include="..\src\AudioMixer\NCAudioMixer.h" />
+    <QtMoc Include="..\src\ChatListItem.h" />
+    <QtMoc Include="..\src\CharacterSelectWidget.h" />
+    <QtMoc Include="..\src\CharacterListItem.h" />
+    <QtMoc Include="..\src\StartUpWidgetPushButtons.h" />
+    <QtMoc Include="..\src\GuildUserListItem.h" />
+    <ClInclude Include="..\src\HiddenSettings.h" />
+    <ClInclude Include="..\src\lime-defines.h" />
+    <ClInclude Include="..\src\LimeCommunicator.h" />
+    <ClInclude Include="..\src\LimeLogin.hpp" />
+    <QtMoc Include="..\src\MAPManager.h" />
+    <ClInclude Include="..\src\CommunityLiveManager.h" />
+    <ClInclude Include="..\src\easylogging++.h" />
+    <QtMoc Include="..\src\MainWindowCentralWidget.h" />
+    <QtMoc Include="..\src\MuteCheckBox.h" />
+    <ClInclude Include="..\src\RetryConnectionHelper.h" />
+    <ClInclude Include="..\src\LocalSettings.h" />
+    <QtMoc Include="..\src\MainWindowPushButtons.h" />
+    <ClInclude Include="..\src\MaskingManager.h" />
+    <QtMoc Include="..\src\PurpleWebsocketClient.h" />
+    <QtMoc Include="..\src\PreviewContainerWidget.h" />
+    <QtMoc Include="..\src\OpenLicensePopup.h" />
+    <QtMoc Include="..\src\MicSlider.h" />
+    <QtMoc Include="..\src\MicSettingWidget.h" />
+    <QtMoc Include="..\src\MicSettingListItem.h" />
+    <QtMoc Include="..\src\MaskSettingWidget.h" />
+    <QtMoc Include="..\src\MaskSettingListItem.h" />
+    <ClInclude Include="..\src\MenuControl.h" />
+    <QtMoc Include="..\src\MenuWidgets.h" />
+    <ClInclude Include="..\src\QFramelessDialog.h" />
+    <ClInclude Include="..\src\QFramelessPopup.h" />
+    <ClInclude Include="..\src\QTWebStompClient.h" />
+    <QtMoc Include="..\src\ShareWithGroupWidget.h" />
+    <QtMoc Include="..\src\StartUpPopUp.h" />
+    <QtMoc Include="..\src\ScreenLockWidget.h" />
+    <ClInclude Include="..\src\ServiceInspectionManager.h" />
+    <ClInclude Include="..\src\StompMessage.h" />
+    <ClInclude Include="..\src\SystemInfo.h" />
+    <QtMoc Include="..\src\ViewerListPopUp.h" />
+    <QtMoc Include="..\src\VideoChatMessageBox.h" />
+    <ClInclude Include="..\src\VideoChatArguments.h" />
+    <QtMoc Include="..\src\ViewerListItem.h" />
+    <QtMoc Include="..\src\WebViewWidget.h" />
+    <QtMoc Include="..\src\VideoChatQListWidget.h" />
+    <ClInclude Include="..\src\webview\browser.h" />
+    <QtMoc Include="..\src\webview\browserwindow.h" />
+    <QtMoc Include="..\src\webview\downloadmanagerwidget.h" />
+    <QtMoc Include="..\src\webview\downloadwidget.h" />
+    <QtMoc Include="..\src\webview\JavascriptInterface.h" />
+    <QtMoc Include="..\src\webview\tabwidget.h" />
+    <QtMoc Include="..\src\webview\UrlSchemeHandler.h" />
+    <ClInclude Include="..\src\webview\WebCommunicator.h" />
+    <QtMoc Include="..\src\webview\webpage.h" />
+    <QtMoc Include="..\src\webview\webpopupwindow.h" />
+    <QtMoc Include="..\src\webview\webview.h" />
+    <ClInclude Include="..\src\webview\WebConfig.h" />
+    <ClInclude Include="..\src\webview\WebviewConfig.h" />
+    <ClInclude Include="..\src\webview\WebviewControl.h" />
+    <ClInclude Include="..\src\webview\WebviewDialog.h" />
+    <QtMoc Include="..\src\webview\WebviewUrlRequestInterceptor.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VideoChat.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\resource\purple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resource\data\local\en-US.ini" />
+    <None Include="..\resource\data\local\ko-KR.ini" />
+    <None Include="..\resource\data\theme\purplelive-dark.qss" />
+    <None Include="..\resource\data\theme\purplelive-light.qss" />
+    <None Include="..\resource\data\theme\purplelive-purple.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Include="..\resource\data\local\en-US.ini" />
+    <UpToDateCheckInput Include="..\resource\data\local\ko-KR.ini" />
+    <UpToDateCheckInput Include="..\resource\data\theme\purplelive-dark.qss" />
+    <UpToDateCheckInput Include="..\resource\data\theme\purplelive-light.qss" />
+    <UpToDateCheckInput Include="..\resource\data\theme\purplelive-purple.qss" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

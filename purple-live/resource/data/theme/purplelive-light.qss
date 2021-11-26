@@ -1,0 +1,1444 @@
+/* ********************************************* */
+/* font weight 700 - Noto Sans KR Bold */
+/* font weight 500 - Noto Sans KR Medium */
+/* font weight 400 - Noto Sans KR Regular */
+/* ********************************************* */
+
+MainWindow {
+    qproperty-backGround: #F6F6FC;
+    qproperty-timerLabel: rgba(45, 45, 73, 0.55);
+    qproperty-timerLabelDisable: rgba(135, 135, 161, 0.2);
+    qproperty-titlebarCharacterName: #545BF3;
+    qproperty-titlebarSuffix: rgba(255, 255, 255, 0.9);
+}
+
+MainWindowCentralWidget { 
+    qproperty-previewBackground: #DFE1EA;
+    qproperty-previewBackgroundBorder: rgba(0, 0, 0, 0.24);
+}
+
+MicSlider {
+    qproperty-micSliderHandle: rgba(255, 255, 255, 0.9);
+    qproperty-micSliderHandleDiable: rgb(68, 68, 100);
+    qproperty-micSliderVolumeLevel: #F04747;
+}
+
+CharacterListItem {
+    qproperty-selectedCircle: #731BFF;
+    qproperty-innerCircle: rgba(255, 255, 255, 0.9);
+    qproperty-notSelectedCircle: #A9ACB6;
+    qproperty-circleSize: 20;
+    qproperty-imageSize: 32;
+    qproperty-nameMaxWidth: 140;
+    qproperty-serverMaxWidth: 70;
+    qproperty-labelTextFont: "Noto Sans KR Medium, -1, 14, 5,0,0,0,0,0,0";
+}
+
+CharacterSelectPushButton {
+    qproperty-characterName: #545BF3;
+    qproperty-roomName: rgba(255, 255, 255, 0.9);
+    qproperty-textFont: "Noto Sans KR Bold, -1, 13, 5,0,0,0,0,0,0";
+    /* QFont::fromString(): Font-Family, pointSizeF, pixelSize, QFont::StyleHint, QFont::Weight, QFont::STyle, underline, strikeout, fixedPitch, rawMode */
+}
+
+SettingPushButton {
+    qproperty-chevronRight: rgba(23, 23, 45, 0.8);
+}
+
+MicSettingListItem {
+    qproperty-selectedCircle: #731BFF;
+    qproperty-innerCircle: rgba(255, 255, 255, 0.9);
+    qproperty-notSelectedCircle: #A9ACB6;
+	qproperty-micNameLabelFont: "Noto Sans KR Medium, -1, 14, 5,0,0,0,0,0,0";
+}
+
+ChatListComboBox {
+    qproperty-highNonLightedText: rgba(23, 23, 45, 0.8);
+    qproperty-guildName: rgba(45, 45, 73, 0.55);
+}
+
+MicSettingWidget {
+    qproperty-subpageColor: #731BFF;
+    qproperty-addpageColor: rgba(47, 53, 84, 0.12);
+    qproperty-handleColor: rgba(255, 255, 255, 0.9);
+}
+
+ShareWithGroupWidget {
+    qproperty-selectAllBtnColor: rgba(23, 23, 45, 0.8);
+    qproperty-MsgPenColor: rgba(57, 57, 105, 0.3);
+}
+
+ChatListItem {
+    qproperty-chatNameColor: rgba(23, 23, 45, 0.8);
+    qproperty-makeNewChatNameColor: rgba(45, 45, 73, 0.55);
+	qproperty-makeNewChaticonColor: rgba(45, 45, 73, 0.55);
+    qproperty-subchatBtnNormal: rgba(45, 45, 73, 0.55);
+    qproperty-subchatBtnActive: #1A172B;
+    qproperty-subchatIconActive: #1A172B;
+    qproperty-checkIconHover: #bdbdd0;
+    qproperty-checkIconActive: #731BFF;
+}
+
+StartUpWindow {
+    qproperty-emptyChatroomMsgColor: rgba(57, 57, 105, 0.3);
+}
+
+ClosePushButton {
+    qproperty-iconColor: rgba(23, 23, 45, 0.8);
+}
+
+ChatListPopUpWidget {
+    qproperty-iconColor: #1A172B;
+}
+
+MainWindowSettingButton {
+    qproperty-disableColor: #bdbdd0;
+    qproperty-normalColor: #444456;
+}
+
+ScreenLockWidget {
+    qproperty-iconToButtonMargin: 40;
+    qproperty-backgroundColor: #FFFFFF;
+    qproperty-pixmapIcon: url(:/MainWindow/image/screenlock-icon.png);
+    qproperty-buttonSize: 150px 48px;
+    qproperty-iconSize: 48px 48px;
+}
+
+MuteCheckBox {
+	qproperty-iconColor: rgba(45, 45, 73, 0.55);
+}
+
+StartStreamPushButton {
+	qproperty-iconTextColor: rgba(255, 255, 255, 0.9);
+	qproperty-iconTextDisableColor: rgba(108, 107, 155, 0.3);
+	qproperty-streamIcon: url(:/StartStreamDlg/image/ic_startstream_btn.png);
+}
+
+MenuButtonLicenseIcon {
+	qproperty-iconColor: #444456;
+}
+
+ViewerListItem {
+	qproperty-iconColor: #444456;
+}
+
+ScreenLockWidget QPushButton {
+    font-family: 'Noto Sans KR Medium';
+    background-color: #731BFF;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+ScreenLockWidget QPushButton:hover {
+    background-color: #6B1EEA;
+}
+
+ScreenLockWidget QPushButton:pressed {
+    background-color: #731BFF;
+}
+
+CharacterSelectWidget QWidget#CharacterSelectWidget
+{
+    background: transparent;
+    border: none;
+}
+
+MicSettingWidget QWidget[style="1"]#slider_widget
+{
+    background: rgba(47, 53, 84, 0.04);
+}
+
+MicSettingWidget QWidget[style="0"]#slider_widget
+{
+    background: transparent;
+}
+
+StartUpPopUp QWidget
+{
+	background: #FFFFFF;;
+    border-radius: 8px;
+}
+
+SelectedChatListItemPopUp QWidget#verticalWidget
+{
+    background: #F6F6FC;
+    border: none;
+    border-radius: 4px;
+}
+
+StartUpWindow QWidget#StartUpW_vWidget 
+{ 
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+StartUpWindow QWidget#widget_title
+{
+	background: #DFE1EA;
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    border-right: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+QWidget ChatListPopUp
+{
+    background:#FFFFFF;
+    border: 1px solid rgba(47, 53, 84, 0.08);
+    border-radius: 4px;
+}
+
+MainWindow QWidget#widget_titlebar 
+{ 
+    background: #DFE1EA;
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    border-right: 1px solid rgba(0, 0, 0, 0.24);
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+MainWindow QWidget#widget_setting 
+{ 
+    background: #F6F6FC; 
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    border-right: 1px solid rgba(0, 0, 0, 0.24);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+QWidget#widget_title { background: #1C1C3A; }
+
+StartUpWindow QWidget#buttonSelectWidget
+{
+    border-radius: 4px;
+    border: 1px solid #3B3F57;
+    background: #3B3F57;
+}
+
+ViewerListPopUp QWidget#main_widget {
+    border: 1px solid rgba(47, 53, 84, 0.08);
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+VideoChatMessageBox QWidget#main_widget {
+    border-radius: 8px;
+    border: 1px solid rgba(47, 53, 84, 0.08);
+    background: #FFFFFF;
+}
+
+OpenLicensePopup QWidget 
+{ 
+    border: none;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+
+OpenLicensePopup QWidget#textEditWidget
+{
+    background: #ECEDF9;
+}
+
+OpenLicensePopup QTextEdit#licensePolicyTextEdit
+{
+    border: none;
+    background: transparent;
+    font-family: 'Noto Sans KR Regular';
+    font-size: 13px;
+    color: rgba(45, 45, 73, 0.55);
+}
+
+StartUpWindow QFrame#vertical_line
+{
+    background: rgba(47, 53, 84, 0.08);
+    border: 0px solid black;
+}
+
+QAbstractItemView {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: 0px;
+    border: 1px solid rgba(232, 234, 255, 0.4);
+    background: #444464;
+    padding: 5px 5px 5px 5px;
+}
+
+QComboBox QAbstractItemView::item
+{
+    border-radius: 5px;
+    height: 32px;
+    background: #444464;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+QComboBox QAbstractItemView::item:hover 
+{
+    background: #616486;
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* QLabel */
+/* ****************************************** */
+/* ****************************************** */
+
+QLabel
+{
+    background: transparent;
+    font-family: 'Noto Sans KR Regular';
+    font-size: 13px;
+}
+
+ViewerListItem QLabel#viewerName_label
+{
+    font-size: 12px;
+}
+
+ViewerListItem QLabel#viewerName_label[isGuest="0"]
+{
+    color: rgba(23, 23, 45, 0.8);
+}
+
+ViewerListItem QLabel#viewerName_label[isGuest="1"]
+{
+    color: rgba(45, 45, 73, 0.55);
+}
+
+GuildUserListItem QLabel#guildUserName_label
+{
+    font-family: 'Noto Sans KR Medium';
+    color: rgba(23, 23, 45, 0.8);
+    font: 14px;
+}
+
+ChatListItem QLabel#chatName_label
+{
+    font-family: 'Noto Sans KR Medium';
+    color: rgba(23, 23, 45, 0.8);
+    font: 14px;
+}
+
+QLabel#title_label
+{
+    font-family: 'Noto Sans KR Bold';
+}
+
+StartUpWindow QLabel#SettingBtnLabel
+{
+    font-family: 'Noto Sans KR Regular';
+    color: rgba(23, 23, 45, 0.8);
+    font: 14px;
+}
+
+MainWindow QLabel#stream_title_label
+{
+    font-family: 'Noto Sans KR Medium';
+    font-size: 16px;
+    color: rgba(23, 23, 45, 0.8);
+    background: transparent;
+}
+
+MainWindow QLabel#time_label
+{
+    font-family: 'Noto Sans KR Regular';
+    font-size: 14px;
+    background: transparent;
+}
+
+MainWindow QLabel#roomName_label
+{
+    font-family: 'Noto Sans KR Bold';
+    font-size: 13px;
+    background: transparent;
+}
+
+MicSettingWidget QLabel
+{
+    color: rgba(45, 45, 73, 0.55);
+}
+
+MicSettingListItem QLabel
+{
+    font-family: 'Noto Sans KR Medium';
+    color: #1A172B;
+    font: 14px;
+}
+
+MaskSettingListItem QLabel#maskName_label
+{
+	background: transparent;
+    font-family: 'Noto Sans KR Medium';
+    color: #1A172B;
+    font: 14px;
+}
+
+MaskSettingListItem QLabel#maskName_label:disabled
+{
+    color: rgba(57, 57, 105, 0.3);
+}
+
+MaskSettingWidget QLabel
+{
+    color: rgba(45, 45, 73, 0.55);
+    font-family: 'Noto Sans KR Medium';
+}
+
+MicSettingListItem QLabel#micName_label
+{
+	background: transparent;
+}
+
+CharacterListItem QLabel#characterName_label
+{
+	background: transparent;
+    color: rgba(23, 23, 45, 0.8);
+    font-family: 'Noto Sans KR Medium';
+    font-size: 14px;
+}
+
+CharacterListItem QLabel#server_label
+{
+	background: transparent;
+    color: rgba(45, 45, 73, 0.55);
+}
+
+StartUpPopUp QLabel#slideupTitle_label
+{
+    color: rgba(23, 23, 45, 0.8);
+    font-family: 'Noto Sans KR Bold';
+    font-size: 18px;
+}
+
+OpenLicensePopup QLabel#icon {
+    background-image: url(:/StartStreamDlg/image/ic_purple_logo.png);
+    background-color: transparent;
+    background-position: center center;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+}
+
+OpenLicensePopup QLabel
+{
+    font-family: 'Noto Sans KR Regular';
+    font-size: 12px;
+    color: rgba(23, 23, 45, 0.8);
+}
+
+OpenLicensePopup QLabel#purpleLive_label
+{
+    font-family: 'Noto Sans KR Medium';
+    font-size: 16px;
+    color: rgba(23, 23, 45, 0.8);
+}
+
+ShareWithGroupWidget QLabel
+{
+    font-family: 'Noto Sans KR Bold';
+    font-size: 14px;
+}
+
+ShareWithGroupWidget QLabel#guidlName_label
+{
+    color: rgba(45, 45, 73, 0.55);
+    font-size: 12px;
+}
+
+ShareWithGroupWidget QLabel#groupUserCount_label
+{
+    font-family: 'Noto Sans KR Medium';
+    color: #731BFF;
+}
+
+ShareWithGroupWidget QLabel#label_usercount_prefix
+{
+    color: rgba(23, 23, 45, 0.8);
+	font-size: 14px;
+}
+
+ShareWithGroupWidget QLabel#label_2
+{
+    color: rgba(23, 23, 45, 0.8);
+	font-size: 14px;
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* QListWidget */
+/* ****************************************** */
+/* ****************************************** */
+
+QListWidget
+{
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 12px;
+}
+
+QListWidget::item
+{
+    background: transparent;
+    border-radius: 4px;
+}
+
+QListWidget::item:hover {
+    background: rgba(47, 53, 84, 0.04);
+}
+
+QListWidget::item:selected {
+    background: transparent;
+}
+
+QListWidget::item:selected:hover {
+    background: rgba(47, 53, 84, 0.04);
+}
+
+ViewerListPopUp QListWidget#viewer_listWidget {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Noto Sans KR Regular';
+    font-size: 12px;
+    color: rgba(23, 23, 45, 0.8);
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+}
+
+ViewerListPopUp QListWidget#viewer_listWidget::item {
+    background: transparent;
+}
+
+QListWidget#ChatListPopUpWidget
+{
+    background: #FFFFFF;
+    border: 1px solid rgba(47, 53, 84, 0.08);
+    border-radius: 4px;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 13px;
+    color: #1A172B;
+}
+
+QListWidget#ChatListPopUpWidget::item {
+    height: 32px;
+    color: rgba(23, 23, 45, 0.8);
+    font-family: 'Noto Sans KR Medium';
+}
+
+StartUpWindow QListWidget#chat_listView
+{
+    padding: 0px;
+    margin-right: 4px;
+}
+
+StartUpWindow QListWidget#chat_listView::item
+{
+    width: 316px;
+    height: 48px;
+    margin-right: 6px;
+}
+
+ShareWithGroupWidget QListWidget#gourpUser_listWidget
+{
+    padding: 0px;
+    margin-right: 4px;
+}
+
+ShareWithGroupWidget QListWidget#gourpUser_listWidget::item
+{
+    width: 316px;
+    height: 48px;
+    margin-right: 9px;
+}
+
+MicSettingWidget QListWidget#mic_listWidget {
+    margin-top: -5px;   /*erase QListWidget top Margin*/
+}
+
+MicSettingWidget QListWidget#mic_listWidget::item {
+    width: 316px;
+    height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+CharacterSelectWidget QListWidget#CharacterSelectListWidget::item {
+    width: 316px;
+    height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+CharacterSelectWidget QListWidget#CharacterSelectListWidget
+{
+    border-left: 1px solid #1C1C3A;
+    border-right: 1px solid #1C1C3A;
+}
+
+MaskSettingWidget QListWidget#mask_listWidget
+{
+    background: #F6F6FC;
+    margin-top: 5px;
+}
+
+MaskSettingWidget QListWidget#mask_listWidget::item {
+    width: 280px;
+    height: 32px;
+    color: #1A172B;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 13px;
+}
+
+MaskSettingWidget QListWidget#mask_listWidget::item:hover {
+    background: transparent;
+}
+
+MaskSettingWidget QListWidget#mask_listWidget::item:selected {
+    background: transparent;
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* QPushButton */
+/* ****************************************** */
+/* ****************************************** */
+
+QPushButton
+{
+    font-family: 'Noto Sans KR Regular';
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+}
+
+StartUpPopUp QPushButton
+{
+    font-family: 'Noto Sans KR Bold';
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+StartUpPopUp QPushButton#cancel_btn
+{
+    background: #A9ACB6;
+}
+
+StartUpPopUp QPushButton#cancel_btn::hover
+{
+    background: #8E92A1;
+}
+
+StartUpPopUp QPushButton#cancel_btn::pressed
+{
+    background: #7A7E8D;
+}
+
+StartUpPopUp QPushButton#select_btn
+{
+    background: #731BFF;
+}
+
+StartUpPopUp QPushButton#select_btn::hover
+{
+    background: #6B1EEA;
+}
+
+StartUpPopUp QPushButton#select_btn::pressed
+{
+    background: #731BFF;
+}
+
+ShareWithGroupWidget QPushButton#selectAll_btn
+{
+    background: transparent;
+}
+
+ShareWithGroupWidget QPushButton#selectAll_btn::hover
+{
+    background: rgba(47, 53, 84, 0.04);
+}
+
+MainWindow QPushButton#viewer_list_btn
+{
+    background: transparent;
+}
+
+MainWindow QPushButton[titleWidget="true"]
+{
+    border: none;
+    border-radius: 4px;
+    background-position: center center;
+    background-color: transparent;
+}
+
+MainWindow QPushButton[titleWidget="true"]#min_btn
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_min.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"]#min_btn:hover
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_min_hover.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"]#min_btn:pressed
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_min_hover.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"]#close_btn
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_close.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"]#close_btn:hover
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_close.svg);
+    background-color: #FF2F51;
+}
+
+MainWindow QPushButton[titleWidget="true"]#close_btn:pressed
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_close.svg);
+    background-color: #FF5672;
+}
+
+MainWindow QPushButton#max_btn
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+MainWindow QPushButton[titleWidget="true"][PrintMaxIcon=true]#max_btn
+{
+    background-image: url(:/MainWindow/image/ic_titlebar_max_normal.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"][PrintMaxIcon=true]#max_btn:hover
+{
+    background-image: url(:/MainWindow/image/ic_titlebar_max_normal_hover.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"][PrintMaxIcon=true]#max_btn:pressed
+{
+    background-image: url(:/MainWindow/image/ic_titlebar_max_normal.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"][PrintMaxIcon=false]#max_btn
+{
+    background-image: url(:/MainWindow/image/ic_titlebar_max.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"][PrintMaxIcon=false]#max_btn:hover
+{
+    background-image: url(:/MainWindow/image/ic_titlebar_max_hover.svg);
+}
+
+MainWindow QPushButton[titleWidget="true"][PrintMaxIcon=false]#max_btn:pressed
+{
+    background-image: url(:/MainWindow/image/ic_titlebar_max.svg);
+}
+
+MainWindow QPushButton#pushButton_quit {
+    font-family: 'Noto Sans KR Bold';
+    background-color: #3B3F57;
+    color: rgba(255, 255, 255, 0.9);
+    font: 14px;
+}
+
+MainWindow QPushButton#pushButton_quit:hover {
+    background-color: #31354D;
+}
+
+MainWindow QPushButton#pushButton_quit:pressed {
+    background-color: #3B3F57;
+}
+
+MainWindow QPushButton#live_icon_btn
+{
+    background-image: url(:/MainWindow/image/live_icon.svg);
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+}
+
+MainWindow QPushButton#live_icon_btn:disabled
+{
+    background-image: url(:/MainWindow/image/live_icon_disable.svg);
+}
+
+MainWindow QPushButton[settingBtn="true"]
+{
+    background-color: transparent;
+    border: 1px solid #A9ACB6; 
+    font-family: 'Noto Sans KR Bold';
+    font-size: 14px;
+}
+
+MainWindow QPushButton[settingBtn="true"]:hover
+{
+    background-color: rgba(47, 53, 84, 0.04);
+    border: 1px solid #8E92A1; 
+}
+
+MainWindow QPushButton[settingBtn="true"]:pressed
+{
+    background-color: rgba(47, 53, 84, 0.08);
+    border: 1px solid #7A7E8D; 
+}
+
+MainWindow QPushButton[settingBtn="true"]:disabled
+{
+    border: 1px solid #D7D9E5;
+}
+
+StartUpWindow QPushButton
+{
+    font-family: 'Noto Sans KR Medium';
+}
+
+StartUpWindow QPushButton[isSegmentControl="true"][isChecked="true"]
+{
+    border-radius: 4px;
+	background: #3B3F57;
+    color: rgba(255, 255, 255, 0.9);
+    font: 12px;
+}
+
+StartUpWindow QPushButton[isSegmentControl="true"][isChecked="false"][isLeftItem="true"]
+{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: #FFFFFF;
+    color: rgba(23, 23, 45, 0.8);
+    font: 12px;
+}
+
+StartUpWindow QPushButton[isSegmentControl="true"][isChecked="false"][isLeftItem="false"]
+{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: #FFFFFF;
+    color: rgba(23, 23, 45, 0.8);
+    font: 12px;
+}
+
+StartUpWindow QPushButton[isSettingBtn="true"]
+{
+    padding-left: 8px;
+    color: rgba(23, 23, 45, 0.8);
+    font: 14px;
+    text-align: left;
+}
+
+StartUpWindow QPushButton[isSettingBtn="true"]:hover
+{
+    color: #1A172B;
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+StartUpWindow QPushButton[isSettingBtn="true"]:pressed
+{
+    color: rgba(23, 23, 45, 0.8);
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+StartUpWindow QPushButton#min_btn
+{
+    border-radius: 0px;
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_min.svg);
+    background-color: transparent;
+    background-position: center center;
+}
+
+StartUpWindow QPushButton#min_btn:hover
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_min_hover.svg);
+}
+
+StartUpWindow QPushButton#min_btn:pressed
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_min_hover.svg);
+}
+
+StartUpWindow QPushButton#close_btn
+{
+    border-radius: 4px;
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_close.svg);
+    background-color: transparent;
+    background-position: center center;
+}
+
+StartUpWindow QPushButton#close_btn:hover
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_close.svg);
+    background-color: #FF2F51;
+}
+
+StartUpWindow QPushButton#close_btn:pressed
+{
+    background-image: url(:/StartStreamDlg/image/ic_titlebar_close.svg);
+    background-color: #FF5672;
+}
+
+StartUpWindow QPushButton[isStreamBtn="true"] {
+    font-family: 'Noto Sans KR Bold';
+    font-size: 14px;
+    background-color: #731BFF;
+    border-radius: 4px;
+}
+
+StartUpWindow QPushButton[isStreamBtn="true"]:hover {
+    background-color: #6B1EEA;
+}
+
+StartUpWindow QPushButton[isStreamBtn="true"]:pressed {
+    background-color: #731BFF;
+}
+
+StartUpWindow QPushButton[isStreamBtn="true"]:disabled {
+    background-color: #F0F0F7;
+    color: rgba(108, 107, 155, 0.3);
+}
+
+VideoChatMessageBox QPushButton#close_btn {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+VideoChatMessageBox QPushButton#close_btn:hover {
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+VideoChatMessageBox QPushButton#close_btn:pressed {
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+StartUpPopUp QPushButton#popup_close_btn {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+StartUpPopUp QPushButton#popup_close_btn:hover {
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+StartUpPopUp QPushButton#popup_close_btn:pressed {
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+OpenLicensePopup QPushButton#openLisencePopCloseBtn {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+OpenLicensePopup QPushButton#openLisencePopCloseBtn:hover {
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+OpenLicensePopup QPushButton#openLisencePopCloseBtn:pressed {
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+VideoChatMessageBox QPushButton {
+    font-family: 'Noto Sans KR Medium';
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+}
+
+VideoChatMessageBox QPushButton#ok_btn {
+    background-color: #731BFF;
+}
+
+VideoChatMessageBox QPushButton#ok_btn:hover {
+    background-color: #6B1EEA;
+}
+
+VideoChatMessageBox QPushButton#ok_btn:pressed {
+    background-color: #731BFF;
+}
+
+VideoChatMessageBox QPushButton#cancel_btn {
+    background-color: #A9ACB6;
+    font-size: 13px;
+}
+
+VideoChatMessageBox QPushButton#cancel_btn:hover {
+    background-color: #8E92A1;
+}
+
+VideoChatMessageBox QPushButton#cancel_btn:pressed {
+    background-color: #7A7E8D;
+}
+
+VideoChatMessageBox QLabel#MainMessage {
+    color: rgba(23, 23, 45, 0.8);
+}
+
+VideoChatMessageBox QLabel#SubMessage {
+    font-family: 'Noto Sans KR Regular';
+    font-size: 12px;
+    color: rgba(45, 45, 73, 0.55);
+}
+
+OpenLicensePopup QPushButton {
+    font-family: 'Noto Sans KR Medium';
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+}
+
+OpenLicensePopup QPushButton#ok_btn {
+    border-radius: 4px;
+    background-color: #731BFF;
+}
+
+OpenLicensePopup QPushButton#ok_btn:hover {
+    background-color: #6B1EEA;
+}
+
+OpenLicensePopup QPushButton#ok_btn:pressed {
+    background-color: #731BFF;
+}
+
+QPushButton#changeSubChat_btn[isPressed="false"]
+{
+    font-family: 'Noto Sans KR Medium';
+    font-size: 12px;
+    color: #1A172B;
+    text-align: left;
+    padding-left: 8px;
+}
+
+QPushButton#changeSubChat_btn:hover
+{
+    background: rgba(47, 53, 84, 0.08);
+}
+
+QPushButton#changeSubChat_btn[isPressed="true"]
+{
+    background: rgba(47, 53, 84, 0.08);
+}
+
+ViewerListItem QPushButton#deport_btn
+{
+    background: transparent;
+    border-radius: 4px;
+}
+
+ViewerListItem QPushButton#deport_btn:hover
+{
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+ViewerListItem QPushButton#deport_btn:pressed
+{
+    background-color: rgba(47, 53, 84, 0.04);
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* QCheckBox */
+/* ****************************************** */
+/* ****************************************** */
+
+QCheckBox{
+    background: transparent;
+    color: transparent;
+    font: 12px;
+    subcontrol-position: left;
+}
+
+QCheckBox::indicator
+{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    image-position: center center;
+}
+
+MaskSettingWidget QCheckBox#maskEnable_checkBox::indicator {
+    width: 32px;
+    height: 32px;
+}
+
+MaskSettingWidget QCheckBox#maskEnable_checkBox::indicator:checked 
+{
+    image: url(:/StartStreamDlg/image/enable_toggle_on.svg);
+}
+
+MaskSettingWidget QCheckBox#maskEnable_checkBox::indicator:unchecked 
+{
+    image: url(:/StartStreamDlg/image/enable_toggle_off.svg);
+}
+
+MaskSettingWidget QCheckBox#hide_checkBox {
+    background: transparent;
+}
+
+MaskSettingListItem QCheckBox#hide_checkBox::indicator
+{
+    width: 24px;
+    height: 24px;
+}
+
+MaskSettingListItem QCheckBox#hide_checkBox::indicator:checked 
+{
+    image: url(:/StartStreamDlg/image/enable_check_on.svg);
+}
+
+MaskSettingListItem QCheckBox#hide_checkBox::indicator:unchecked 
+{
+    image: url(:/StartStreamDlg/image/enable_check_off.svg);
+}
+
+MaskSettingListItem QCheckBox#hide_checkBox::indicator:checked:disabled
+{
+    image: url(:/StartStreamDlg/image/disable_check_on.svg);
+}
+
+MaskSettingListItem QCheckBox#hide_checkBox::indicator:unchecked:disabled
+{
+    image: url(:/StartStreamDlg/image/disable_check_off.svg);
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* QScrollBar */
+/* ****************************************** */
+/* ****************************************** */
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: rgba(47, 53, 84, 0.08);
+    border-radius: 10px;
+    width: 4px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    width: 0px;
+}
+
+QScrollBar::left-arrow:vertical, QScrollBar::right-arrow:vertical, QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    border: none;
+    background: none;
+    color: none;
+}
+
+OpenLicensePopup QScrollBar:vertical {
+    background: #ECEDF9;
+    width: 4px;
+}
+
+OpenLicensePopup QScrollBar::handle:vertical {
+    background-color: rgba(47, 53, 84, 0.08);
+    min-height: 1px;
+    min-width: 8px;
+    border-radius: 10px;
+    border: none;
+    padding-right: 4px;
+}
+
+StartUpWindow QScrollBar:vertical {
+    background: transparent;
+}
+
+StartUpWindow QScrollBar::handle:vertical {
+    background-color: rgba(47, 53, 84, 0.08);
+    border-radius: 10px;
+    width: 4px;
+    border: none;
+}
+
+ShareWithGroupWidget QScrollBar:vertical {
+    background: transparent;
+}
+
+ShareWithGroupWidget QScrollBar::handle:vertical {
+    background-color: rgba(47, 53, 84, 0.08);
+    border-radius: 10px;
+    width: 4px;
+    border: none;
+}
+
+/* ********************************************* */
+/* *************** Context Menu **************** */
+/* ********************************************* */
+
+/* main-menu */
+QMenu#main_menu_object { 
+	font-family: 'Noto Sans KR Regular';
+	font-weight: 400;
+	font-size: 13px;
+}
+QMenu#main_menu_object { 
+	background-color: #FFFFFF;
+	margin: 11px; 
+	padding: 7px;
+	border-radius: 8px;
+	border: 1px solid rgba(47, 53, 84, 0.08);;
+} 
+QMenu#main_menu_object::right-arrow { 
+	image: url(:/menu/image/menu/menu_right_arrow_light.svg);
+	margin: 0px 12px 0px 0px;
+}
+QMenu#main_menu_object::separator { 
+	height: 1px; 
+	margin: 0px;
+	background: rgba(47, 53, 84, 0.08);
+}
+QMenu#main_menu_object::item { 
+	height: 32;
+	padding: 0px 35px 0px 8px; 
+	color: #1A172B; 
+	border-radius: 4px;
+    font-weight: 400;
+	font-size: 13px;
+}
+QMenu#main_menu_object::item:selected { 
+	background: rgba(47, 53, 84, 0.04); 
+	color:#1A172B;
+}
+QMenu#main_menu_object::item:selected { 
+	font-family: 'Noto Sans KR Medium';
+}
+QWidget#separator_menu_item_widget { 
+	background-color: transparent; 
+}
+CustomMenu#main_menu_object { 
+	qproperty-shadowColor: rgba(0, 0, 0, 0.08);
+	qproperty-separatorColor: rgba(47, 53, 84, 0.08);
+}
+
+/* main-menu license */
+QWidget#license_menu_item_widget { 
+	min-width: 100px; min-height: 32px;
+	background-color: #FFFFFF; 
+	border-radius: 4px;
+}
+QWidget#license_menu_item_widget[state=hover] { 
+	background-color: rgba(47, 53, 84, 0.04); 
+}
+
+QPushButton#license_menu_button_title { 
+	font-family: 'Noto Sans KR Regular'; font-weight: 400;
+	font-size: 13px;
+	text-align: left;
+	background-color: transparent; 
+	color: rgba(23, 23, 45, 0.8);
+}
+QPushButton#license_menu_button_title[state=hover] {
+	font-family: 'Noto Sans KR Medium'; font-weight: 400;
+	color: rgba(23, 23, 45, 0.8);
+}
+
+QPushButton#license_menu_button_image { 
+	background: transparent; 
+	margin: 5px;
+	width: 12px; height: 12px;
+}
+
+/* mask-menu title*/
+QWidget#maskall_menu_item_widget { 
+	min-width: 100px; min-height: 32px;
+	background-color: transparent; 
+	border-radius: 4px;
+}
+QWidget#maskall_menu_item_widget[state=hover] { 
+	background-color: rgba(47, 53, 84, 0.04);
+}
+
+QPushButton#maskall_menu_button_title { 
+	font-size: 13px;
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+	text-align: left;
+	background-color: transparent; 
+	color: #1A172B;
+}
+QPushButton#maskall_menu_button_title[state=normal] { 
+	font-family: 'Noto Sans KR Regular'; font-weight: 400; 
+}
+QPushButton#maskall_menu_button_title[state=hover] { 
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+}
+
+QCheckBox#maskall_menu_checkbox_mask_enable { 
+	background: transparent; width: 34px; height: 32px; 
+}
+QCheckBox#maskall_menu_checkbox_mask_enable::indicator:checked { 
+	image: url(:/menu/image/menu/maskall_checkbox_on_enable.svg); width: 34px; height: 32px; 
+}
+QCheckBox#maskall_menu_checkbox_mask_enable::indicator:unchecked { 
+	image: url(:/menu/image/menu/maskall_checkbox_off_enable.svg); width: 34px; height: 32px; 
+}
+
+/* mask-menu listitem*/
+QWidget#mask_menu_item_widget { 
+	min-width: 100px; min-height: 32px;
+	background-color: #FFFFFF; 
+	border-radius: 4px;
+}
+QWidget#mask_menu_item_widget[state=hover] { 
+	background-color: rgba(47, 53, 84, 0.04); 
+}
+
+QPushButton#mask_menu_item_button { 
+	font-size: 13px;
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+	text-align: left;
+	background-color: transparent; 
+	color: #1A172B;
+}
+QPushButton#mask_menu_item_button[state=normal] { 
+	font-family: 'Noto Sans KR Regular'; font-weight: 400; 
+}
+QPushButton#mask_menu_item_button[state=hover] { 
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+}
+
+QCheckBox#mask_menu_item_checkbox[enable_mask=true] { 
+	width: 24px; height: 24px;
+	background: transparent; 
+}
+QCheckBox#mask_menu_item_checkbox::indicator:checked[enable_mask=true] { 
+	image: url(:/menu/image/menu/mask_checkbox_on_enable.svg); width: 24px; height: 24px;
+}
+QCheckBox#mask_menu_item_checkbox::indicator:unchecked[enable_mask=true] { 
+	image: url(:/menu/image/menu/mask_checkbox_off_enable.svg); width: 24px; height: 24px; 
+}
+
+QCheckBox#mask_menu_item_checkbox[enable_mask=false] {
+	width: 18px; height: 18px;
+	background: transparent; 
+}
+QCheckBox#mask_menu_item_checkbox::indicator:checked[enable_mask=false] { 
+	image: url(:/menu/image/menu/mask_checkbox_on_disable.svg); width: 24px; height: 24px;
+}
+QCheckBox#mask_menu_item_checkbox::indicator:unchecked[enable_mask=false] { 
+	image: url(:/menu/image/menu/mask_checkbox_off_disable.svg); width: 24px; height: 24px;
+}
+
+/* mic-menu title */
+QWidget#mic_title_menu_item_widget { 
+	min-width: 100px; min-height: 32px;
+	background-color: #FFFFFF; 
+	border-radius: 4px;
+}
+QWidget#mic_title_menu_item_widget::hover { 
+	/* background-color: rgba(47, 53, 84, 0.04); */
+}
+
+QPushButton#mic_title_menu_button_title { 
+	font-size: 13px;
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+	text-align: left;
+	background-color: transparent; 
+	color: #1A172B;
+}
+
+/* mic-menu listitem */
+QWidget#mic_device_menu_item_widget { 
+	min-width: 100px; min-height: 32px;
+	background-color: #FFFFFF; 
+	border-radius: 4px;
+}
+QWidget#mic_device_menu_item_widget[state=hover] { 
+	background-color: rgba(47, 53, 84, 0.04); 
+}
+
+QPushButton#mic_device_menu_item_button { 
+	font-size: 13px;
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+	text-align: left;
+	background-color: transparent; 
+	color: rgba(23, 23, 45, 0.8);
+}
+QPushButton#mic_device_menu_item_button[state=normal] { 
+	font-family: 'Noto Sans KR Regular'; font-weight: 400; 
+	color: rgba(23, 23, 45, 0.8);
+}
+QPushButton#mic_device_menu_item_button[state=hover] { 
+	font-family: 'Noto Sans KR Medium'; font-weight: 400; 
+	color: rgba(23, 23, 45, 0.8);
+}
+
+QCheckBox#mic_device_menu_item_checkbox { 
+	background: transparent; width: 24px; height: 24px; 
+}
+QCheckBox#mic_device_menu_item_checkbox[state=hover] { 
+	image: url(:/menu/image/menu/mic_checked_hover.svg); width: 24px; height: 24px; 
+}
+QCheckBox#mic_device_menu_item_checkbox::indicator:checked { 
+	image: url(:/menu/image/menu/mic_checked_active.svg); width: 24px; height: 24px; 
+}
+QCheckBox#mic_device_menu_item_checkbox::indicator:unchecked { 
+	image: null; width: 24px; height: 24px; 
+}
+
+/* mic-menu volume control */
+QWidget#volume_menu_item_widget { 
+	min-width: 100px; min-height: 40px;
+	background-color: #FFFFFF; 
+	border-radius: 4px;
+}
+QWidget#volume_menu_item_widget::hover { 
+	background-color: rgba(47, 53, 84, 0.04); 
+}
+
+VolumeSlider {
+	qproperty-backgroundColor: #dedfe8;
+	qproperty-volumeColor: #731BFF;
+	qproperty-magnitudeColor: #F04747;
+}
+QSlider#volume_menu_item_slider {
+    background: transparent;
+    height: 32px;
+}
+QSlider#volume_menu_item_slider::groove:horizontal {
+    subcontrol-origin: content;
+    background: transparent;
+    height: 32px;
+}
+QSlider#volume_menu_item_slider::handle:horizontal {
+    background-color: transparent;
+	image: null;
+	margin: 0px -2px -4px -2px;
+	width: 12px; height: 20px;
+}
+QSlider#volume_menu_item_slider::handle:horizontal[show_thumb=true] {
+    background-color: transparent;
+	image: url(:/menu/image/menu/slider_thumb.png);
+	margin: 0px -2px -4px -2px;
+}
+QSlider#volume_menu_item_slider::sub-page:horizontal {
+    /* background: rgb(115,27,255); */
+	background: transparent;
+    margin: 14px 0px 14px 0px;
+    border-radius: 2px;
+}
+QSlider#volume_menu_item_slider::add-page:horizontal {
+    /* background: rgb(222,223,232); */
+	background: transparent;
+	margin: 14px 0px 14px 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+QSlider#volume_menu_item_slider::add-page:horizontal[mute=true] {
+	margin: 14px 0px 14px -4px;
+	border-radius: 2px;
+}
+
+QSlider#volume_menu_item_slider::handle:horizontal:disabled { image: null; }
+
+/* ********************************************* */
+/* *************** Context Menu **************** */
+/* ********************************************* */

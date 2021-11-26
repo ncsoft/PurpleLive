@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Global">
+      <UniqueIdentifier>{f01c3b2a-52da-4c3c-a7de-91378ef15a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media">
+      <UniqueIdentifier>{1adeaceb-cd00-4298-83f5-c94fd00cf83b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{644772ff-b657-4404-baf5-d094d20095c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{33478d36-5710-41d2-b624-fc16e8ad7c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media\MediaRoom">
+      <UniqueIdentifier>{a35b62f3-7362-4664-909d-8650bf638af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRTC">
+      <UniqueIdentifier>{4dbba1cf-617c-4785-aabb-8803111bb17e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{bc60d0f2-92ab-4e6c-8289-6fe164780651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRTC\encoder">
+      <UniqueIdentifier>{50e6b2bc-e793-4d82-9353-6625605ba3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRTC\encoder\amf">
+      <UniqueIdentifier>{93922bf0-518c-4f1b-8f12-75e2640adaf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRTC\encoder\qsv">
+      <UniqueIdentifier>{1e3a0c46-3543-46ad-8886-0a62d6e46a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRTC\encoder\nvenc">
+      <UniqueIdentifier>{1408b387-1e73-4dd3-ad83-ee47f975016c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebRTC\encoder\qsv\libmfx">
+      <UniqueIdentifier>{3faa377d-b38c-4611-8f12-30afeb5d59c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GpuDetector">
+      <UniqueIdentifier>{2d1b9ee4-3a05-456a-8cf4-45b449395361}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\CameraCaptureMediaRoom.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MediaRoom.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenShareMediaRoom.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VoiceChatMediaRoom.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WatchingMediaRoom.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CommunityLiveCore.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dllmain.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stdafx.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PeerConnection.cpp">
+      <Filter>WebRTC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WebRTCManager.cpp">
+      <Filter>WebRTC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SignalClient.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MediaRoomManager.cpp">
+      <Filter>Media</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VideoCapturer.cpp">
+      <Filter>WebRTC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MediaRoomBase.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AudioDeviceModuleWrapper.cpp">
+      <Filter>WebRTC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\LiveStudioMediaRoom.cpp">
+      <Filter>Media\MediaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\HttpUtil.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf_encoder.cc">
+      <Filter>WebRTC\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nv_encoder.cc">
+      <Filter>WebRTC\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\openh264_encoder.cc">
+      <Filter>WebRTC\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv11_encoder.cc">
+      <Filter>WebRTC\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\amf.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\amf-capabilities.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\amf-encoder.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\amf-encoder-h264.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\api-base.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\api-d3d9.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\api-d3d11.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\api-host.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\api-opengl.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\enc-h264.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\plugin.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amf\utility.cpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nvcodec\nvenc.cpp">
+      <Filter>WebRTC\encoder\nvenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\main.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_critical_section.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_dispatcher.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_dispatcher_log.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_dxva2_device.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_function_table.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_library_iterator.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_load_dll.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_load_plugin.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_plugin_hive.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\libmfx\mfx_win_reg_key.cpp">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\common_directx9.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\common_directx11.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\common_utils.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\common_utils_windows.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\device_directx9.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\QSV_Encoder.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qsv\QSV_Encoder_Internal.cpp">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\HardwareEncoderDetector.cpp">
+      <Filter>GpuDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gpu-detector\gpu-encoder-detector.cpp">
+      <Filter>GpuDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\easylogging++.cc">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\CameraCaptureMediaRoom.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenShareMediaRoom.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\VoiceChatMediaRoom.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WatchingMediaRoom.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stdafx.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\StructureDefines.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\targetver.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PeerConnection.h">
+      <Filter>WebRTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WebRTCHelper.h">
+      <Filter>WebRTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WebRTCManager.h">
+      <Filter>WebRTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SignalClient.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TransactionId.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WebRTCObservers.h">
+      <Filter>WebRTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\CommunityLiveCore.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\CommunityLiveError.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\MediaRoom.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\MediaRoomManager.h">
+      <Filter>Media</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Singleton.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\VideoCapturer.h">
+      <Filter>WebRTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\MediaRoomBase.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\AudioDeviceModuleWrapper.h">
+      <Filter>WebRTC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\LiveStudioMediaRoom.h">
+      <Filter>Media\MediaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CommunityLiveCoreConfig.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\HttpUtil.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf_encoder.h">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\avc_util.hpp">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nv_encoder.h">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\openh264_encoder.h">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PurpleVideoEncoderFactory.h">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv11_encoder.h">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\VideoEncoderUtil.h">
+      <Filter>WebRTC\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\amf.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\amf-capabilities.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\amf-encoder.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\amf-encoder-h264.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\api-base.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\api-d3d9.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\api-d3d11.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\api-host.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\api-opengl.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\enc-h264.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\plugin.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\strings.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\utility.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amf\version.hpp">
+      <Filter>WebRTC\encoder\amf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nvcodec\encoder_info.h">
+      <Filter>WebRTC\encoder\nvenc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nvcodec\nvenc.h">
+      <Filter>WebRTC\encoder\nvenc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nvcodec\NvEncoder\nvEncodeAPI.h">
+      <Filter>WebRTC\encoder\nvenc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\blog.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfxaudio_exposed_functions_list.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_critical_section.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_dispatcher.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_dispatcher_defs.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_dispatcher_log.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_dxva2_device.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_exposed_functions_list.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_library_iterator.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_load_dll.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_load_plugin.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_plugin_hive.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_vector.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\mfx_win_reg_key.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxastructures.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxaudio++.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxaudio.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxcommon.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxdefs.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxenc.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxjpeg.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxmvc.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxpak.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxplugin++.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxplugin.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxsession.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxstructures.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxvideo++.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxvideo.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\libmfx\msdk\mfxvstructures.h">
+      <Filter>WebRTC\encoder\qsv\libmfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\common_directx9.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\common_directx11.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\common_utils.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\device_directx9.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\QSV_Encoder.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qsv\QSV_Encoder_Internal.h">
+      <Filter>WebRTC\encoder\qsv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\EncoderStatistics.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\HardwareEncoderDetector.h">
+      <Filter>GpuDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gpu-detector\gpu-encoder-detector.h">
+      <Filter>GpuDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\easylogging++.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CommunityLiveCore.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

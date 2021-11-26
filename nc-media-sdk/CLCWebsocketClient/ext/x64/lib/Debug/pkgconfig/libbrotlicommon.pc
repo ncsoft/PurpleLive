@@ -1,0 +1,11 @@
+prefix=E:/vcpkg/packages/brotli_x64-windows-static/debug
+exec_prefix=E:/vcpkg/packages/brotli_x64-windows-static/debug
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlicommon
+URL: https://github.com/google/brotli
+Description: Brotli common dictionary library
+Version: 1.0.7
+Libs: -L${libdir} -lbrotlicommon
+Cflags: -I${includedir}
