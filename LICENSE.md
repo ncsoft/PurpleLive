@@ -2,7 +2,7 @@
 
 GNU General Public License v2.0
 
-copyright (C) 1989, 1991 Free Software Foundation, Inc.  
+copyright (C) 1989, 1991 Free Software Foundation, Inc.
 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
 Everyone is permitted to copy and distribute verbatim copies
@@ -110,7 +110,7 @@ If the program is interactive, make it output a short notice like this when it s
 Gnomovision version 69, Copyright (C) year name of author
 Gnomovision comes with ABSOLUTELY NO WARRANTY; for details
 type `show w'.  This is free software, and you are welcome
-to redistribute it under certain conditions; type `show c' 
+to redistribute it under certain conditions; type `show c'
 for details.
 The hypothetical commands `show w' and `show c' should show the appropriate parts of the General Public License. Of course, the commands you use may be called something other than `show w' and `show c'; they could even be mouse-clicks or menu items--whatever suits your program.
 
@@ -118,7 +118,7 @@ You should also get your employer (if you work as a programmer) or your school, 
 
 Yoyodyne, Inc., hereby disclaims all copyright
 interest in the program `Gnomovision'
-(which makes passes at compilers) written 
+(which makes passes at compilers) written
 by James Hacker.
 
 signature of Ty Coon, 1 April 1989
@@ -129,95 +129,94 @@ Any questions about our licensed work can be sent to opensource@ncsoft.com.
 
 This software uses Open Source Software (OSS). You can find the link for the source code of these open source projects, along with applicable license information, below.
 
-amf
-https://github.com/obsproject/obs-amd-encoder/ 
-Copyright (C) 2016 Advanced Micro Devices, Inc.
-MIT License
+amf <br>
+https://github.com/obsproject/obs-amd-encoder/ <br>
+Copyright (C) 2016 Advanced Micro Devices, Inc.<br>
+MIT License<br>
 
-boost
-https://github.com/boostorg/boost 
-Copyright (C) 1998-2005, Beman Dawes, David Abrahams
-Copyright (C) 2004-2007, Rene Rivera
-Boost Software License 1.0
+boost<br>
+https://github.com/boostorg/boost <br>
+Copyright (C) 1998-2005, Beman Dawes, David Abrahams<br>
+Copyright (C) 2004-2007, Rene Rivera<br>
+Boost Software License 1.0<br>
 
-brotli
-https://github.com/google/brotli 
-Copyright (C) 2009, 2010, 2013-2016 by the Brotli Authors.
-MIT License
+brotli<br>
+https://github.com/google/brotli <br>
+Copyright (C) 2009, 2010, 2013-2016 by the Brotli Authors.<br>
+MIT License<br>
 
-cpprestsdk
-https://github.com/Microsoft/cpprestsdk 
-Copyright (C) Microsoft Corporation.
-MIT License
+cpprestsdk<br>
+https://github.com/Microsoft/cpprestsdk <br>
+Copyright (C) Microsoft Corporation.<br>
+MIT License<br>
 
-core-js
-https://github.com/zloirock/core-js 
-Copyright (c) 2014-2021 Denis Pushkarev
-MIT License
+core-js<br>
+https://github.com/zloirock/core-js <br>
+Copyright (c) 2014-2021 Denis Pushkarev<br>
+MIT License<br>
 
-Curl
-https://github.com/curl/curl 
-Copyright (C) 1996 - 2021, Daniel Stenberg, <daniel@haxx.se>, et al.
-Curl License
+Curl<br>
+https://github.com/curl/curl <br>
+Copyright (C) 1996 - 2021, Daniel Stenberg, <daniel@haxx.se>, et al.<br>
+Curl License<br>
 
-DirectXTex
-https://github.com/Microsoft/DirectXTex 
-Copyright (C) 2011-2021 Microsoft Corporation.
-MIT License
+DirectXTex<br>
+https://github.com/Microsoft/DirectXTex <br>
+Copyright (C) 2011-2021 Microsoft Corporation.<br>
+MIT License<br>
 
-DirectXtk
-https://github.com/microsoft/DirectXTK 
-Copyright (C) 2012-2021 Microsoft Corporation
-MIT License
+DirectXtk<br>
+https://github.com/microsoft/DirectXTK <br>
+Copyright (C) 2012-2021 Microsoft Corporation<br>
+MIT License<br>
 
-easylogging++
-https://github.com/amrayn/easyloggingpp 
-Copyright (c) 2012-2018 Amrayn Web Services
-Copyright (c) 2012-2018 @abumusamq
-MIT License
+easylogging++<br>
+https://github.com/amrayn/easyloggingpp <br>
+Copyright (c) 2012-2018 Amrayn Web Services<br>
+Copyright (c) 2012-2018 @abumusamq<br>
+MIT License<br>
 
-jansson
-https://github.com/akheron/jansson 
-Copyright (C) 2009-2020 Petri Lehtinen <petri@digip.org>
-MIT License
+jansson<br>
+https://github.com/akheron/jansson <br>
+Copyright (C) 2009-2020 Petri Lehtinen <petri@digip.org><br>
+MIT License<br>
 
-jwt-cpp
-https://github.com/Thalhammer/jwt-cpp 
-Copyright (c) 2018 Dominik Thalhammer
-MIT License
+jwt-cpp<br>
+https://github.com/Thalhammer/jwt-cpp <br>
+Copyright (c) 2018 Dominik Thalhammer<br>
+MIT License<br>
 
-Noto Sans KR
-https://fonts.google.com/specimen/Noto+Sans+KR
-Copyright (C) 2014-2015 Adobe Systems Incorporated (http://www.adobe.com)
-SIL Open Font License 1.1
+Noto Sans KR<br>
+https://fonts.google.com/specimen/Noto+Sans+KR<br>
+Copyright (C) 2014-2015 Adobe Systems Incorporated (http://www.adobe.com)<br>
+SIL Open Font License 1.1<br>
 
-obs-studio
-https://github.com/obsproject/obs-studio 
-Copyright (C) 2012 - 2021. OBS and OBS Studio
-GNU General Public License v2.0
+obs-studio<br>
+https://github.com/obsproject/obs-studio <br>
+Copyright (C) 2012 - 2021. OBS and OBS Studio<br>
+GNU General Public License v2.0<br>
 
-openssl
-https://www.openssl.org/ 
-Copyright (C) 1998-2019 The OpenSSL Project.
-OpenSSL License
+openssl<br>
+https://www.openssl.org/ <br>
+Copyright (C) 1998-2019 The OpenSSL Project.<br>
+OpenSSL License<br>
 
-Qt Webview
-https://www.qt.io/ko-kr/ 
-Copyright (C) 2016 The Qt Company Ltd.
-GNU Lesser General Public License v3.0
+Qt Webview<br>
+https://www.qt.io/ko-kr/ <br>
+Copyright (C) 2016 The Qt Company Ltd.<br>
+GNU Lesser General Public License v3.0<br>
 
-regenerator
-https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtimeCopyright 
-Copyright (c) 2014-present, Facebook, Inc.
-MIT License
+regenerator<br>
+https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtimeCopyright <br>
+Copyright (c) 2014-present, Facebook, Inc.<br>
+MIT License<br>
 
-webrtc
-https://webrtc.googlesource.com/ 
-Copyright (C) 2015 The WebRTC Project Authors
-BSD 3-Clause "New" or "Revised" License
+webrtc<br>
+https://webrtc.googlesource.com/ <br>
+Copyright (C) 2015 The WebRTC Project Authors<br>
+BSD 3-Clause "New" or "Revised" License<br>
 
-zlib
-https://github.com/madler/zlib 
-Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
-Zlib License
-
+zlib<br>
+https://github.com/madler/zlib <br>
+Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler<br>
+Zlib License<br>
