@@ -43,7 +43,7 @@ QT 5.13.1
 ### nc-media-sdk
   * nc-media-sdk는 CLCWebsocketClient와 CommunityLiveCore로 구성되며, nc-media-sdk-win-without-nvenc.sln을 통해 빌드합니다.
   * NVENC 가속을 지원하기 위해서는 NVIDIA Video Code SDK(8.2)가 필요합니다.<p></p>
-  NVIDIA Video Codec SDK를 다운로드 받거나,<p></p> [Github](https://github.com/NVIDIA/video-sdk-samples/tree/master/Samples/NvCodec/NvEncoder)에서 NvEncoder의 코드를 CommunityLiveCore\src\nvcodec\NvEncoder 폴더에 복사한후 nc-media-sdk-win.sln을 통해 빌드합니다.
+  NVIDIA Video Codec SDK(https://developer.nvidia.com/nvidia-video-codec-sdk)를 다운로드 받아 NvEncoder의 코드를 CommunityLiveCore\src\nvcodec\NvEncoder 폴더에 복사한후 nc-media-sdk-win.sln을 통해 빌드합니다.
   * 빌드후 필요한 파일을 복사합니다.
   <br>nc-media-sdk\copy_lib.bat 실행<br>
 ### nc-capture-sdk
